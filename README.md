@@ -108,10 +108,11 @@ Instead of using the helper method you can do the following:
 
 ```javascript
 var options = {}; // See 'Options' above
-var app = exports.extendExpress(options)();
+var expressWs = require('express-ws-routes');
+var app = expressWs.extendExpress(options)();
 
 var server = http.createServer(app);
-server.wsServer = exports.createWebSocketServer(server, app, options);
+server.wsServer = expressWs.createWebSocketServer(server, app, options);
 server.listen(8080, function() {
 	console.log('Server listening on port 8080...');
 });
