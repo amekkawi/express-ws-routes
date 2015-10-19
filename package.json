@@ -1,0 +1,29 @@
+{
+  "name": "express-ws-routes",
+  "version": "1.0.0",
+  "description": "Handle WebSocket connections using express routes.",
+  "main": "express-ws-routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amekkawi/express-ws-routes.git"
+  },
+  "keywords": [
+    "express",
+    "ws",
+    "websocket"
+  ],
+  "author": "Andre Mekkawi <github@andremekkawi.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amekkawi/express-ws-routes/issues"
+  },
+  "homepage": "https://github.com/amekkawi/express-ws-routes",
+  "dependencies": {
+    "array-flatten": "^1.1.1",
+    "debug": "^2.2.0",
+    "ws": "^0.8.0"
+  }
+}
