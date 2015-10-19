@@ -47,13 +47,19 @@ router.websocket('/sub/path', function(info, cb, next) {
 });
 app.use('/attachment/path', router);
 
+// Reject requests using cb just like you would with ws's verifyClient
 app.websocket('/bad/path', function(info, cb, next) {
-	// Reject requests using cb just like you would with ws's verifyClient
 	cb(false);
 	
 	// Using the optional arguments...
 	//cb(false, 401);
 	//cb(false, 401, 'No access!');
+});
+
+// Skip handlers by calling next(), just like normal routes
+app.websocket('/skipped', function(info, cb, next) {
+	console.log('Skipped!');
+	next();
 });
 
 // Using app.listen will also create a require('ws').Server
