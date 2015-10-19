@@ -1,6 +1,6 @@
 {
   "name": "express-ws-routes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Handle WebSocket connections using express routes.",
   "main": "express-ws-routes.js",
   "scripts": {
