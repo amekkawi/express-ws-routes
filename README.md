@@ -75,7 +75,7 @@ server.wsServer.on('connection', function(socket) {
 
 ## Options ##
 
-# Module Name for 'express'
+### Module Name for 'express'
 
 By default the express module name is `express` but can be changed:
 
@@ -86,7 +86,7 @@ var app = require('express-ws-routes')({
 });
 ```
 
-# Fake HTTP Method
+### Fake HTTP Method
 
 By default the fake HTTP method is `WEBSOCKET` but can be changed:
 
