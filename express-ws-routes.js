@@ -14,6 +14,7 @@ var WebSocketServer = require('ws').Server;
 var ServerResponse = require('http').ServerResponse;
 
 var slice = Array.prototype.slice;
+var toString = Object.prototype.toString;
 
 /**
  * Create an express application with methods for handling web sockets.
