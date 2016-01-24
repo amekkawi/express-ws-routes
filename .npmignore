@@ -1,0 +1,11 @@
+/.idea/
+/node_modules/
+/demo/
+/test/
+/webpack.config.*.js
+/.babelrc
+/.npmignore
+/publish.sh
+/*.tgz
+npm-debug.log
+.DS_Store
