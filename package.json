@@ -25,5 +25,8 @@
     "array-flatten": "^1.1.1",
     "debug": "^2.2.0",
     "ws": "^0.8.0"
+  },
+  "peerDependencies": {
+    "express": "^4.5.0"
   }
 }
