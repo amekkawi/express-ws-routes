@@ -11,6 +11,9 @@ Differences from [express-ws](https://www.npmjs.com/package/express-ws):
 
 ## Installation ##
 
+If using NPM v3, install express v4.5.0 or later:
+`npm install express@^4.5.0`
+
 `npm install express-ws-routes`
 
 ## Usage ##
