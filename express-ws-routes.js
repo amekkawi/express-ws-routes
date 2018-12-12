@@ -206,11 +206,11 @@ exports.verifyClient = function(app, options) {
  * @returns {function}
  */
 exports.onConnection = function() {
-	return function(webSocket) {
-		var handler = webSocket.upgradeReq._websocketHandler;
-		delete webSocket.upgradeReq._websocketHandler;
+	return function(webSocket, req) {
+		var handler = req._websocketHandler;
+		delete req._websocketHandler;
 
 		// TODO: catch error?
-		handler(webSocket, webSocket.upgradeReq);
+		handler(webSocket, req);
 	};
 };
